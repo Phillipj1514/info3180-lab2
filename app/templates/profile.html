@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div class="card profile-card">
+    <div class="card-header text-center bg-info">
+        <img class="img-circle img-responsive profile-pic" src="{{url_for('static', filename='profile-pic.jpg')}}"/>
+        <h1 class="card-title text-white">Phillip Llewellyn</h1>
+        <p class="card-text text-light">@phillipllewellyn</p>
+        <p class="card-text text-light">Kingston, Jamaica</p>
+        <p class="card-text text-light">joined, {{date}}</p>
+    </div>
+    <div class="card-body">
+        <p class="card-text text-center text-muted">I am a 20 year old Software Developer. I am attending the university of the west indies.I love to solve problems using coding. I would like to work in the area of robotics and artificial intellegence to solve world problems.</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm text-center">
+                    <h2 class="card-text">50</h2>
+                    <p class="card-text text-muted">Posts</p>
+                </div>
+                <div class="col-sm text-center">
+                    <h2 class="card-text">502</h2>
+                    <p class="card-text text-muted">Following</p>
+                </div>
+                <div class="col-sm text-center">
+                    <h2 class="card-text">1250</h2>
+                    <p class="card-text text-muted">Followers</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card-footer text-center">
+        <button class="btn btn-primary"> Follow</button>
+    </div>
+</div>
+{% endblock%}
